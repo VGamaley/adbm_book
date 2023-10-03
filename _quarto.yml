@@ -1,0 +1,47 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Аналіз даних у біології та медицині"
+  author: "[Valeriy Sydorenko](https://www.linkedin.com/in/valeriy-sydorenko-6782279a/)"
+  date: "03.10.2023"
+  
+  page-footer:
+    left: |
+      Аналіз даних у біології та медицині was written by Sydorenko Valeriy.
+    right: |
+      This book was built with <a href="https://quarto.org/">Quarto</a>.
+  cover-image: cover.png
+  favicon: cover.png
+  site-url: https://r4ds.hadley.nz/
+  repo-url: https://github.com/hadley/r4ds/
+  repo-branch: main
+  repo-actions: [edit, issue]
+  
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - lab 1.qmd
+    - references.qmd
+  appendices:
+     - appendix_1.qmd
+     - appendix_2.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme:
+        - cosmo
+        - r4ds.scss
+    code-link: true
+  pdf:
+    documentclass: scrreprt
+    
+    author-meta: "Sydorenko Valeriy"
+    include-in-header: "plausible.html"
+    callout-appearance: simple
+
+editor: visual
+

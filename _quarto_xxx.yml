@@ -1,0 +1,23 @@
+project:
+  type: book
+
+book:
+  title: "Аналіз даних у біології та медицині"
+  author: "[Valeriy Sydorenko](https://www.linkedin.com/in/valeriy-sydorenko-6782279a/)"
+  date: "03.10.2023"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
